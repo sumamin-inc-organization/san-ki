@@ -820,6 +820,7 @@ input[type="checkbox"]:checked:before {
         right: 0px;
     }
     .header_nav_logo {
+        display: block;
         width: 43px;
         margin-top: 20px;
         margin-left: 20px;
