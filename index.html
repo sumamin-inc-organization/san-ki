@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <title></title>
+    <meta name="description" content="" />
+
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="https://use.typekit.net/lvk8vax.css">
+    <!-- google fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&family=Shippori+Mincho+B1&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- google fonts end -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/anime.css" />
+</head>
+
+<body>
+    <!-- <div id="loading">
+        <div class="loading__inner">
+            <div class="loading__img">
+                <div data-anime="" class="loadingChara">
+                    <img data-anime="shaking" src="./assets/images/img-moving.svg" alt="" class="shaking">
+                </div>
+                <div class="loading__text">
+                    <p>ちょっとまってね<span class="loading__text--01">.</span><span class="loading__text--02">.</span><span class="loading__text--03">.</span></p>
+                </div>
+            </div>
+            <div class="loading__surround1"><img src="./assets/images/top/about/img-about_surround1.svg" alt=""></div>
+            <div class="loading__surround2"><img src="./assets/images/top/about/img-about_surround2.svg" alt=""></div>
+        </div>
+    </div> -->
+    <header>
+        <div class="header">
+            <div class="header_inner">
+                <a href="#top" class="header_logo">
+                    <img src="assets/images/logo.svg" alt="株式会社三喜ロゴ">
+                </a>
+                <div class="header_menu_wrap">
+                    <ul class="header_menu">
+                        <li class="header_list">
+                            <a href="#top">TOP</a>
+                        </li>
+                        <li class="header_list">
+                            <a href="#about">私たちについて</a>
+                        </li>
+                        <li class="header_list">
+                            <a href="#service">事業内容</a>
+                        </li>
+                        <li class="header_list">
+                            <a href="#company">会社概要</a>
+                        </li>
+                        <li class="header_list header_contact">
+                            <a href="#contact">
+                                <span>お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_fixed">
+            <div class="header_inner">
+                <a href="#top" class="header_logo">
+                    <img src="assets/images/fixed_logo.svg" alt="株式会社三喜ロゴ">
+                </a>
+                <div class="header_menu_wrap">
+                    <ul class="header_menu">
+                        <li class="header_list">
+                            <a href="#top">TOP</a>
+                        </li>
+                        <li class="header_list">
+                            <a href="#about">私たちについて</a>
+                        </li>
+                        <li class="header_list">
+                            <a href="#service">事業内容</a>
+                        </li>
+                        <li class="header_list">
+                            <a href="#company">会社概要</a>
+                        </li>
+                        <li class="header_list header_contact">
+                            <a href="#contact">
+                                <span>お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button id="hamburgerBtn" class="header_hamburger">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="header__nav">
+        <a href="#top" class="header_nav_logo">
+            <img src="assets/images/menu_logo.svg" alt="株式会社三喜ロゴ">
+        </a>
+        <div class="header_nav_inner">
+            <ul class="header_nav_menu">
+                <li class="header_nav_list hover_opacity">
+                    <a href="#top">TOP</a>
+                </li>
+                <li class="header_nav_list hover_opacity">
+                    <a href="#about">私たちについて</a>
+                </li>
+                <li class="header_nav_list hover_opacity">
+                    <a href="#service">事業案内</a>
+                </li>
+                <li class="header_nav_list hover_opacity">
+                    <a href="#company">会社概要</a>
+                </li>
+            </ul>
+            <a href="#" class="header_memu_icon hover_opacity">
+                <img src="assets/images/sns_icon.svg" alt="インスタグラム">
+            </a>
+            <div class="header_nav_contact_wrap">
+                <button class="header_nav_contact">
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5064 0H1.49365C1.29188 0 1.10733 0.0874827 0.98046 0.218889C0.853585 0.347268 0.772774 0.531098 0.772774 0.732476V13.2675C0.769962 13.4661 0.853585 13.6527 0.983271 13.7841C1.11015 13.9154 1.29473 14 1.49365 14H18.5064C18.7025 14 18.8871 13.9154 19.0168 13.7841C19.1466 13.6527 19.2272 13.4661 19.2272 13.2675V0.732476C19.2272 0.531098 19.1466 0.347268 19.0168 0.218889C18.8899 0.0874827 18.7053 0 18.5064 0ZM18.1402 1.96344V12.8997H1.85705V1.95829L9.07444 8.46656H9.07739C9.33687 8.70011 9.66844 8.82269 9.99724 8.82269C10.1125 8.82269 10.225 8.80219 10.3374 8.77308H10.3721L10.4586 8.7409C10.6258 8.6826 10.7815 8.58914 10.9199 8.46659C12.144 7.36401 15.0989 4.69988 17.0862 2.90845L18.1402 1.96344ZM17.4549 1.10459C15.6821 2.70306 11.677 6.31386 10.199 7.64642C10.1673 7.67276 10.1327 7.69319 10.0982 7.70486C10.0663 7.71653 10.0318 7.72241 9.9972 7.72241C9.92511 7.72241 9.85584 7.69902 9.79528 7.64357L2.53753 1.10028H11.0901L17.4549 1.10459Z" fill="white"/>
+                    </svg>
+                    <span>お問い合わせフォーム</span>
+                </button>
+            </div>
+        </div> 
+    </nav>
+    <div class="gray_mask"></div>
+    <main class="main">
+        <section id="top">
+            <div class="kv">
+                <div class="kv_inner">
+                    <div class="kv_main">
+                        <div class="kv_catchphrase">売り手良し</div>
+                        <div class="kv_kakeru"><img src="assets/images/kakeru.svg" alt="×"></div>
+                        <div class="kv_catchphrase">買い手良し</div>
+                        <div class="kv_kakeru"><img src="assets/images/kakeru.svg" alt="×"></div>
+                        <div class="kv_catchphrase">世間良し</div>
+                    </div>
+                    <div class="kv_sub">
+                        <p class="kv_catchphrase">喜びをつなぐ</p>
+                    </div>
+                </div>
+                <div class="kv_effect">
+                    <svg viewBox="0 0 899 884" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="effect01" d="M571.871 653.566C527.542 726.47 385.399 836.008 263.039 884H0C139.579 858.355 478.085 735.262 571.871 653.566Z" fill="#1D90D1"/>
+                        <path id="effect02" d="M715.113 445.48C722.807 576.633 616.199 798.641 524.978 884H333.744C470.759 831.612 686.266 605.941 715.113 445.48Z" fill="#4FA149"/>
+                        <path id="effect03" d="M742.956 284.653C776.107 448.224 701.924 737.46 588.356 884H860.554C898.288 706.321 914.041 536.335 877.039 342.903C840.038 149.47 670.785 0 425.331 0C572.97 26.0108 709.618 120.162 742.956 284.653Z" fill="#8AB829"/>
+                    </svg>
+                </div>
+                <div class="kv_effect-sp">
+                    <img src="assets/images/effect_group-sp.svg" alt="">
+                </div>
+                <!-- <img class="effect_img effect_img01" src="assets/images/blue_effect.svg" alt="">
+                <img class="effect_img effect_img02 delay-04" src="assets/images/green01_effect.svg" alt="">
+                <img class="effect_img effect_img03 delay-08" src="assets/images/green02_effect.svg" alt=""> -->
+            </div>
+        </section>
+        <section id="about">
+            <div class="about_inner">
+                <div class="about_text">
+                    <div class="sec_head about_head">
+                        <h2 class="sec_title">ABOUT US</h2>
+                        <p class="sec_subtitle"><span class="green_ball"></span>私たちについて</p>
+                    </div>
+                    <div class="sec_copy about_copy">
+                        <h3>最高の価値と<br>サービスで<span class="green">信頼</span>を築く</h3>
+                    </div>
+                    <div class="sec_description">
+                        <p>私たちの会社は、お客様、パートナー企業、そして社会全体に対して、常に最良の価値とサービスを提供することを使命としています。お客様の満足を最優先に考え、常にお客様の期待を超えるサービスを提供することを心掛けています。お客様の声に耳を傾け、柔軟かつ迅速に対応することで、信頼と満足を築いていきます。</p>
+                    </div>
+                </div>
+                <div class="about_img">
+                    <picture>
+                        <source srcset="assets/images/about-sp.png" media="(max-width: 768px)" type="image/png">
+                        <img src="assets/images/about.png" alt="買取・販売">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="service">
+            <div class="sec_head service_head">
+                <h2 class="sec_title">SERVICE</h2>
+                <p class="sec_subtitle"><span class="green_ball"></span>事業内容</p>
+            </div>
+            <div class="service_group">
+                <div class="service_group_text">
+                    <div class="group_title_wrap">
+                        <p class="group_subtitle">SERVICE 01</p>
+                        <h4 class="group_title">金プラチナ・ブランド品買取</h4>
+                    </div>
+                    <div class="group_description">
+                        <p>お客様が不要になった商品を適正な価格で買取り、新しい価値を見出す事業です。特に時計をはじめとする高級品の買取を得意としており、その品質と価値を正確に評価するための専門知識と経験を持つスタッフが対応します。<br><br>
+                            私たちの査定スタッフは、業界での豊富な経験と専門知識を持ち、お客様の大切な商品を正確に評価し、公正な価格を提示します。全ての取引は透明性を保ち、お客様に安心してご利用いただける環境を提供します。</p>
+                    </div>
+                    <div class="service_category">
+                        <ul>
+                            <li>ダイヤ・宝石</li>
+                            <li>金・プラチナ</li>
+                            <li>ブランド品</li>
+                            <li>時計</li>
+                            <li>古銭</li>
+                            <li>骨董品</li>
+                            <li>商品券</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service_group_img">
+                    <picture>
+                        <source srcset="assets/images/service01-sp.png" media="(max-width: 768px)" type="image/png">
+                        <img src="assets/images/service01.png" alt="宝石">
+                    </picture>
+                </div>
+            </div>
+            <div class="service_group reverse">
+                <div class="service_group_img">
+                    <picture>
+                        <source srcset="assets/images/service02-sp.png" media="(max-width: 768px)" type="image/png">
+                        <img src="assets/images/service02.png" alt="宝石">
+                    </picture>
+                </div>
+                <div class="service_group_text">
+                    <div class="group_title_wrap">
+                        <p class="group_subtitle">SERVICE 02</p>
+                        <h4 class="group_title">時計販売・買取</h4>
+                    </div>
+                    <div class="group_description">
+                        <p>私たちの時計買取販売事業は、国内外の高級時計ブランドを取り扱い、質の高いサービスとともにお客様に提供することを目的としています。専門知識と経験を持つスタッフが、お客様のニーズに合わせた最適な時計を提案し、納得して購入できるよう丁寧にサポートします。<br><br>
+                            また、購入後も安心してお使いいただけるよう、修理やメンテナンスなどのアフターサービスを提供しています。私たちは、お客様にとって特別な一品を見つけるお手伝いをし、長く愛用できるようサポートし続けます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="company">
+            <div class="sec_head company_head">
+                <h2 class="sec_title">COMPANY</h2>
+                <p class="sec_subtitle"><span class="green_ball"></span>会社概要</p>
+            </div>
+            <div class="company_group">
+                <div class="company_img sp_img">
+                    <img src="assets/images/company-sp.png" alt="社内" class="sp">
+                </div>
+                <div class="company_text">
+                    <table class="company_info">
+                        <tr>
+                            <td class="label">社名</td>
+                            <td class="value">株式会社三喜</td>
+                        </tr>
+                        <tr>
+                            <td class="label">設立</td>
+                            <td class="value">2022年11月17日</td>
+                        </tr>
+                        <tr>
+                            <td class="label">所在地</td>
+                            <td class="value">〒160-0023<br>東京都新宿区西新宿7-15-1 アパライトビル102</td>
+                        </tr>
+                        <tr>
+                            <td class="label">代表</td>
+                            <td class="value">白井 健郎</td>
+                        </tr>
+                        <tr>
+                            <td class="label">連絡先</td>
+                            <td class="value">050-3091-0990</td>
+                        </tr>
+                        <tr>
+                            <td class="label">資本金</td>
+                            <td class="value">500万円</td>
+                        </tr>
+                        <tr>
+                            <td class="label">事業内容</td>
+                            <td class="value">買取販売リユース業</td>
+                        </tr>
+                        <tr>
+                            <td class="label">登録・認定</td>
+                            <td class="value">古物商許可</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.1341845215138!2d139.69723236965152!3d35.695012987443725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd624049637%3A0xfc61c847203f91c0!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_77yX5LiB55uu77yR77yV4oiS77yRIOOCouODkeODqeOCpOODiOODk-ODqyAxMDI!5e0!3m2!1sja!2sjp!4v1721869429601!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="cta">
+            <div class="cta_inner">
+                <h4>お気軽にご質問・<br class="sp">ご相談ください</h4>
+                <div class="cta_content">
+                    <div class="cta_tel">
+                        <a href="tel:050-3091-0990" class="cta_tel_upper">
+                            <img src="assets/images/phone.svg" alt="電話">
+                            <p>050-3091-0990</p>
+                        </a>
+                        <div class="cta_tel_bottom">
+                            <p>受付時間：10:00〜18:00(定休日：日曜日)</p>
+                        </div>
+                    </div>
+                    <div class="cta_contact">
+                        <a href="#contact" class="contact_btn">
+                            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5064 0H1.49365C1.29188 0 1.10733 0.0874827 0.98046 0.218889C0.853585 0.347268 0.772774 0.531098 0.772774 0.732476V13.2675C0.769962 13.4661 0.853585 13.6527 0.983271 13.7841C1.11015 13.9154 1.29473 14 1.49365 14H18.5064C18.7025 14 18.8871 13.9154 19.0168 13.7841C19.1466 13.6527 19.2272 13.4661 19.2272 13.2675V0.732476C19.2272 0.531098 19.1466 0.347268 19.0168 0.218889C18.8899 0.0874827 18.7053 0 18.5064 0ZM18.1402 1.96344V12.8997H1.85705V1.95829L9.07444 8.46656H9.07739C9.33687 8.70011 9.66844 8.82269 9.99724 8.82269C10.1125 8.82269 10.225 8.80219 10.3374 8.77308H10.3721L10.4586 8.7409C10.6258 8.6826 10.7815 8.58914 10.9199 8.46659C12.144 7.36401 15.0989 4.69988 17.0862 2.90845L18.1402 1.96344ZM17.4549 1.10459C15.6821 2.70306 11.677 6.31386 10.199 7.64642C10.1673 7.67276 10.1327 7.69319 10.0982 7.70486C10.0663 7.71653 10.0318 7.72241 9.9972 7.72241C9.92511 7.72241 9.85584 7.69902 9.79528 7.64357L2.53753 1.10028H11.0901L17.4549 1.10459Z" fill="white"/>
+                            </svg>
+                            <span>お問い合わせフォーム</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact_head_wrap">
+                <div class="sec_head contact_head">
+                    <h2 class="sec_title">CONTACT</h2>
+                    <p class="sec_subtitle"><span class="green_ball"></span>お問い合わせ</p>
+                </div>
+                <div class="contact_description">
+                    <p>送信された内容は確認次第、返信させていただきます。<br class="pc">
+                        尚、送信内容によってはご返答しかねるものもございますので予めご了承下さい。</p>
+                </div>
+            </div>
+            <div class="contact_form">
+                <form>
+                    <div class="form_group">
+                        <label for="name">お名前 <span class="required">必須</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="tel">電話番号 <span class="required">必須</span></label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="email">メールアドレス <span class="required">必須</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="privacy_policy">
+                        <p>■プライバシーポリシー<br>
+                            株式会社三喜（以下、弊社）では、弊社業務において当店が取り扱う全ての個人情報の保護について、社会的使命を十分に認識し、本人の権利の保護、個人情報に関する法規制等を遵守します。
+                        </p>
+                        <p>
+                            1. 個人情報の取得について<br>
+                            利用目的を明確にしたうえで、必要とする範囲内に限り、適法かつ公正な手段によって個人情報を取得し、最新の注意を払って管理いたします。
+                        </p>
+                        <p>
+                            2. 個人情報の利用について<br>
+                            お問い合わせなどをいただく際に、お客様のメールアドレス、お名前等の情報の入力が必要な場合がございます。これらは、適切にご回答したり、ご予約を承ったりする際に必要な情報になります。
+                        </p>
+                        <p>
+                            3. 個人情報の開示・提供について<br>
+                            弊社は以下の場合を除いて、個人情報を委託提供する場合はございません。<br>
+                            ・お客様の同意がある場合<br>
+                            ・法令等により官公署から個人情報の提供を求められた場合
+                        </p>
+                        <p>
+                            4. 個人情報の管理について<br>
+                            弊社は個人情報の正確性を保持し、且つこれを安全に管理致します。当店は個人情報の紛失、破損、改ざん及び漏洩等を防止する為、不正アクセスコンピューターウィルス等に対する適正な情報セキュリティ対策を講じます。当店は個人情報を持ち出し、外部へ送信する等により漏洩させません。当サイトにて収集された個人情報に、オフラインや第三者から知り得た情報が補足されることはありません。
+                        </p>
+                        <!-- プライバシーポリシーの詳細を追加 -->
+                    </div>
+                    <div class="form_group checkbox_group">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">個人情報保護方針に同意する</label>
+                    </div>
+                    <div class="submit_btn_wrap">
+                        <button type="submit" class="submit_btn">
+                            <span>送信する</span>
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 5.34229L13.5 5.34229M13.5 5.34229L9.04286 9.34229M13.5 5.34229L9.04286 1.34228" stroke="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_upper">
+            <div class="footer_info_wrap">
+                <div class="footer_logo">
+                    <img src="assets/images/logo_white.svg" alt="株式会社三喜">
+                </div>
+                <div class="footer_info">
+                    <p class="company_name">株式会社三喜</p>
+                    <p class="company_adress">〒160-0023<br>東京都新宿区西新宿7-15-1 アパライトビル102</p>
+                    <p class="company_tel">TEL. <a href="tel:050-3091-0990">050-3091-0990</a></p>
+                </div>
+            </div>
+            <div class="footer_menu_wrap">
+                <ul class="footer_menu">
+                    <li class="footer_list">
+                        <a href="#top" class="hover_opacity">TOP</a>
+                    </li>
+                    <li class="footer_list">
+                        <a href="#about" class="hover_opacity">私たちについて</a>
+                    </li>
+                    <li class="footer_list">
+                        <a href="#service" class="hover_opacity">事業内容</a>
+                    </li>
+                    <li class="footer_list">
+                        <a href="#company" class="hover_opacity">会社概要</a>
+                    </li>
+                    <li class="footer_list">
+                        <a href="#contact" class="hover_opacity">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="sns_link">
+                    <a href="" class="hover_opacity"><p>Follow us</p><img src="assets/images/sns_icon_white.svg" alt="インスタグラム"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p class="copyright">Copyright ©Sanki ALL RIGHTS RESERVED.</p>
+            <a href="#top" class="pagetop">
+                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.313477" width="50" height="50" rx="25" fill="white"/>
+                    <path d="M25 33.3135L25 17.3135M25 17.3135L30 22.7992M25 17.3135L20 22.7992" stroke="#4FA149" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+
+</html>
