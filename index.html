@@ -442,8 +442,26 @@
     <script src="assets/js/anime.js"></script>
     <script src="assets/js/luxy.min.js"></script>
     <script>
-        window.onload = function() {
-            luxy.init();
+        function initLuxy() {
+            if (window.innerWidth >= 768) {
+                if (!luxyInitialized) {
+                luxy.init();
+                luxyInitialized = true;
+                }
+            } else {
+                if (luxyInitialized) {
+                luxy.destroy();
+                luxyInitialized = false;
+                }
+            }
         }
+
+        let luxyInitialized = false;
+
+        window.addEventListener('load', initLuxy);
+        window.addEventListener('resize', initLuxy);
+        // window.onload = function() {
+        //     luxy.init();
+        // }
     </script>
 </html>
