@@ -89,10 +89,14 @@ h3, h4, h5, h6 {
 /* header */
 .header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    transition: all 0.3s;
+}
+.header.fixType {
+    background: #fff;
 }
 .header_fixed {
     display: none;
@@ -114,14 +118,31 @@ h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: start;
     width: 100%;
+    transition: all 0.3s;
 }
-.header_fixed .header_inner {
-    padding: 18px 40px 18px;
-    align-items: center;
+.header.fixType .header_inner {
+    padding: 30px 40px 18px;
+    align-items: flex-start;
+    height: 82px;
 }
 .header_logo {
     width: 50px;
     display: block;
+    position: relative;
+}
+.logo_img01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo_img02 {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    display: none;
+}
+.logo_img03 {
+    display: none;
 }
 .header_menu {
     display: flex;
@@ -135,8 +156,9 @@ h3, h4, h5, h6 {
     font-weight: 500;
     letter-spacing: 0.04em;
     color: #fff;
+    transition: all 0.3s;
 }
-.header_fixed .header_list a {
+.header.fixType .header_list a {
     color: #000;
 }
 .header_contact a {
@@ -147,7 +169,7 @@ h3, h4, h5, h6 {
     transition: all 0.3s;
     border: 1px solid var(--bule);
 }
-.header_fixed .header_contact a {
+.header.fixType .header_contact a {
     color: #fff;
 }
 .header_contact a {
@@ -350,6 +372,7 @@ opacity: 0;/*真ん中の線は透過*/
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.04rem;
+    line-height: 1.3;
     border-radius: 999px;
     border: 1px solid var(--gray);
     height: 36px;
@@ -395,7 +418,7 @@ opacity: 0;/*真ん中の線は透過*/
 }
 .company_info td.value {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.08rem;
 }
@@ -890,6 +913,8 @@ input[type="checkbox"]:checked:before {
     }
     .kv_catchphrase {
         letter-spacing: 0.07em;
+        font-size: clamp(40px, 4.6rem, 46px);
+        font-size: 46px;
     }
     .kv_sub {
         width: 100vw;
@@ -897,6 +922,8 @@ input[type="checkbox"]:checked:before {
     .kv_sub .kv_catchphrase {
         text-align: center;
         letter-spacing: 0.3em;
+        font-size: clamp(24px 2.8rem, 28px);
+        font-size: 28px;
     }
     
     /* about */
@@ -1088,4 +1115,23 @@ input[type="checkbox"]:checked:before {
 }
 .submit_btn:hover svg path {
     stroke: var(--bule);
+}
+
+/* animation */
+[data-anime="fadeIn-up"] {
+
+}
+.fadeIn-up {
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
 }

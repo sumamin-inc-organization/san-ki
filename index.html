@@ -46,9 +46,11 @@
     </div> -->
     <header>
         <div class="header">
-            <div class="header_inner">
+            <div class="header_inner" data-anime="fadeIn-up">
                 <a href="#top" class="header_logo">
-                    <img src="assets/images/logo.svg" alt="株式会社三喜ロゴ">
+                    <img class="logo_img01" src="assets/images/logo.svg" alt="株式会社三喜ロゴ">
+                    <img  class="logo_img02" src="assets/images/fixed_logo.svg" alt="株式会社三喜ロゴ">
+                    <img  class="logo_img03" src="assets/images/menu_logo.svg" alt="株式会社三喜ロゴ">
                 </a>
                 <div class="header_menu_wrap">
                     <ul class="header_menu">
@@ -73,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="header_fixed">
+        <!-- <div class="header_fixed">
             <div class="header_inner">
                 <a href="#top" class="header_logo">
                     <img src="assets/images/fixed_logo.svg" alt="株式会社三喜ロゴ">
@@ -100,7 +102,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
     <button id="hamburgerBtn" class="header_hamburger">
         <span></span><span></span><span></span>
@@ -171,7 +173,7 @@
         <section id="about">
             <div class="about_inner">
                 <div class="about_text">
-                    <div class="sec_head about_head">
+                    <div class="sec_head about_head" data-anime="fadeIn-up">
                         <h2 class="sec_title">ABOUT US</h2>
                         <p class="sec_subtitle"><span class="green_ball"></span>私たちについて</p>
                     </div>
@@ -389,9 +391,9 @@
     <footer class="footer">
         <div class="footer_upper">
             <div class="footer_info_wrap">
-                <div class="footer_logo">
+                <a href="#top" class="footer_logo">
                     <img src="assets/images/logo_white.svg" alt="株式会社三喜">
-                </div>
+                </a>
                 <div class="footer_info">
                     <p class="company_name">株式会社三喜</p>
                     <p class="company_adress">〒160-0023<br>東京都新宿区西新宿7-15-1 アパライトビル102</p>
@@ -400,9 +402,9 @@
             </div>
             <div class="footer_menu_wrap">
                 <ul class="footer_menu">
-                    <li class="footer_list">
+                    <!-- <li class="footer_list">
                         <a href="#top" class="hover_opacity">TOP</a>
-                    </li>
+                    </li> -->
                     <li class="footer_list">
                         <a href="#about" class="hover_opacity">私たちについて</a>
                     </li>
@@ -434,6 +436,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="assets/js/common.js"></script>
-</body>
-
+    <script src="assets/js/anime.js"></script>
 </html>
