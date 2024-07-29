@@ -41,17 +41,12 @@ $(document).ready(function() {
     function triggerAnime(data) {
         // 作成した連想配列をループで回す
         $.each(data, function(index, value) {
-            console.log('not');
             var animeType = value.animeType;
-            console.log(animeType);
             $('[data-anime="'+ animeType + '"]').each(function() {
-                console.log('not');
                 if (isInViewport(this)) {
                     $(this).addClass(animeType);
                     // $(this).removeAttr('style');
                     // $(this).removeClass('initial-anime');
-                } else {
-                    console.log('not');
                 }
             });
         });
@@ -63,7 +58,6 @@ $(document).ready(function() {
             var animeType = value.animeType;
             $('[data-anime="'+ animeType + '"]').each(function() {
                 $(this).addClass(animeType);
-                console.log($(this));
             });
         });
     }
