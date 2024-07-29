@@ -460,7 +460,7 @@ opacity: 0;/*真ん中の線は透過*/
 .cta_tel_upper {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 14px;
 }
 .cta_tel_upper img {
     width: 23px;
@@ -469,7 +469,7 @@ opacity: 0;/*真ん中の線は透過*/
     font-size: 32px;
     font-weight: bold;
     line-height: 1.7;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.08em;
     color: #000;
     font-family: "Roboto", sans-serif;
 }
@@ -477,7 +477,7 @@ opacity: 0;/*真ん中の線は透過*/
     font-size: 14px;
     font-weight: 500;
     line-height: 1.7;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.08em;
 }
 .cta_contact {
     display: grid;
