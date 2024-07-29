@@ -330,6 +330,7 @@ opacity: 0;/*真ん中の線は透過*/
     gap: 100px;
     max-width: 1100px;
     margin: auto;
+    align-items: center;
 }
 .service_group:last-child {
     margin-top: 120px;
@@ -1126,6 +1127,18 @@ input[type="checkbox"]:checked:before {
 }
 .submit_btn:hover svg path {
     stroke: var(--bule);
+}
+.pagetop svg .content {
+    transition: all 0.3s;
+}
+.pagetop:hover svg .content {
+    fill: var(--green);
+}
+.pagetop svg .arrow {
+    transition: all 0.3s;
+}
+.pagetop:hover svg .arrow {
+    stroke: #fff;
 }
 
 /* animation */
