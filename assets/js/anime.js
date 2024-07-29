@@ -6,6 +6,14 @@ $(document).ready(function() {
         // {animeType: "initial-slideVisible", initialCss: "overflow", initialValue: "hidden"},
     ]
 
+    //初期アニメーション
+    const initialData = [
+        {animeType: "initial-fadeIn", initialCss: "opacity", initialValue: "0"},
+        {animeType: "initial-fadeIn-up", initialCss: "opacity", initialValue: "0"},
+    ]
+
+    initialAnime(initialData);
+
     // Check elements on page load
     $(window).on('load scroll', function() {
         triggerAnime(animeData);
@@ -48,4 +56,26 @@ $(document).ready(function() {
             });
         });
     }
+
+    //ページに最初に来たときに発火させるアニメーション
+    function initialAnime(data) {
+        $.each(data, function(index, value) {
+            var animeType = value.animeType;
+            $('[data-anime="'+ animeType + '"]').each(function() {
+                $(this).addClass(animeType);
+                console.log($(this));
+            });
+        });
+    }
+
+    $.each(animeData, function(index, value) {
+        var animeType = value.animeType;
+        var initialCss = value.initialCss;
+        var initialValue = value.initialValue;
+        $('[data-anime="'+ animeType + '"]').each(function() {
+            if(initialCss !== undefined) {
+                $(this).css(initialCss, initialValue);
+            }
+        });
+    });
 });

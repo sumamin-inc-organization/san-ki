@@ -7,6 +7,7 @@
     bottom: -56px;
     right: -137px;
     overflow: hidden;
+    opacity: 0;
 }
 .kv_effect svg {
     height: 110vh;
@@ -49,6 +50,12 @@
     display: none;
 }
 
+@media screen and (max-width:880px) {
+    .kv_effect {
+        right: -203px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .kv_effect {
         display: none;
@@ -59,6 +66,7 @@
         bottom: 0;
         right: 0;
         width: 100vw;
+        opacity: 0;
     }
     .kv_effect-sp img {
         width: 100%;

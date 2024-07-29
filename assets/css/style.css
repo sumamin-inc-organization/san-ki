@@ -485,7 +485,7 @@ opacity: 0;/*真ん中の線は透過*/
 }
 .contact_btn {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.04rem;
     color: #fff;
     background-color: var(--bule);
@@ -627,7 +627,7 @@ input[type="checkbox"]:checked:before {
     width: 298px;
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.04rem;
     position: relative;
     border: 1px solid var(--bule);
@@ -1011,10 +1011,14 @@ input[type="checkbox"]:checked:before {
 
     /* contact */
     #contact {
-        padding: 80px 0 0 0;
+        padding: 80px 0 70px 0;
+    }
+    .contact_description {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .contact_form {
-        margin:  80px 0 0 0;
+        margin:  80px 20px 0 20px;
         padding: 50px 20px 60px 20px;
     }
     .form_group {
@@ -1081,9 +1085,16 @@ input[type="checkbox"]:checked:before {
 	transform-origin: left top;
     background-color: #fff;
 }
+.header.fixType .header_list:not(.header_contact) a::after {
+    background-color: #000;
+}
 .header_list:hover a::after {
 	background-color: #fff;
 	transform: scale(1, 1);
+}
+
+.header.fixType .header_list:hover a::after {
+    background-color: #000;
 }
 .header_contact:hover a {
     background-color: #fff;
@@ -1118,20 +1129,77 @@ input[type="checkbox"]:checked:before {
 }
 
 /* animation */
-[data-anime="fadeIn-up"] {
-
+[data-anime="initial-fadeIn"] {
+    opacity: 0;
 }
 .fadeIn-up {
-    animation: fadeInUp 0.5s forwards;
+    animation: fadeInUp 0.8s forwards;
+}
+.initial-fadeIn {
+    animation: fadeIn 1.8s forwards;
+}
+.initial-fadeIn-up {
+    animation: fadeInUp 0.8s forwards;
+}
+
+.delay-02 {
+    animation-delay: 0.2s;
+}
+.delay-04 {
+    animation-delay: 0.4s;
+}
+.delay-06 {
+    animation-delay: 0.6s;
+}
+.delay-08 {
+    animation-delay: 0.8s;
+}
+.delay-10 {
+    animation-delay: 1s;
+}
+.delay-12 {
+    animation-delay: 1.2s;
+}
+.delay-14 {
+    animation-delay: 1.4s;
+}
+.delay-16 {
+    animation-delay: 1.6s;
+}
+.delay-18 {
+    animation-delay: 1.8s;
+}
+.delay-20 {
+    animation-delay: 2s;
+}
+.delay-22 {
+    animation-delay: 2.2s;
+}
+.delay-24 {
+    animation-delay: 2.4s;
+}
+.delay-26 {
+    animation-delay: 2.6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,40px,0)
+        transform: translate3d(0,40px,0);
+        opacity: 0;
     }
 
     to {
         transform: translate3d(0,0,0);
-        opacity: 1
+        opacity: 1;
     }
 }

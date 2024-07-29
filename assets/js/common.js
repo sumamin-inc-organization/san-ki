@@ -29,7 +29,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.gray_mask').toggleClass('active');
     });
-    $('.header_nav_list a').on('click', function() {
+    $('.header_nav_list a, .header_nav_contact').on('click', function() {
         $('.header__nav').removeClass('active');
         $('#hamburgerBtn').removeClass('active');
         $('.gray_mask').removeClass('active');
