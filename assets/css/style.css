@@ -390,7 +390,7 @@ opacity: 0;/*真ん中の線は透過*/
     margin-top: 80px;
     display: grid;
     grid-template-columns: 35% 1fr;
-    gap: 190px;
+    gap: 13.2vw;
 }
 .company_img {
     background-image: url(../images/company.jpg);
