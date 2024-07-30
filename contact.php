@@ -1,9 +1,9 @@
 <?php
 if($_POST) {
-    echo $_POST['name'] . '<br>';
-    echo $_POST['tel'] . '<br>';
-    echo $_POST['email'] . '<br>';
-    echo $_POST['message'];
+    $name = htmlspecialchars($_POST['name']);
+    $tel =  htmlspecialchars($_POST['tel']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
 } else {
     echo "HTMLからのPOST送信受信に失敗しました";
 }
@@ -176,3 +176,34 @@ if($_POST) {
     <script src="assets/js/anime.js"></script>
     <script src="assets/js/form.js"></script>
 </html>
+<?php
+//メール設定
+    // 管理者に送信するメールの設定
+    $to = "your-email@example.com";
+    $subject = "株式会社三喜ホームページよりお問い合わせがありました";
+    $messages = "お名前: $name\n電話番号: $phone\nメールアドレス: $email\nお問合せ内容: $message";
+    $headers = "From: no-reply@example.com";
+
+    // 管理者へのメール送信
+    if (mail($to, $subject, $messages, $headers)) {
+        echo "メールが送信されました。";
+
+        // 自動返信メールの設定
+        $auto_reply_subject = "【株式会社三喜】お問い合わせありがとうございます";
+        $auto_reply_message = "$name 様\n\nこの度はお問い合わせいただきありがとうございます。以下の内容でお問い合わせを受け付けました。\n\n" .
+                                "お名前: $name\n電話番号: $tel\nメールアドレス: $email\nお問合せ内容: $message\n\n" .
+                                "弊社から折り返しご連絡いたしますので、しばらくお待ちください。\n\n" .
+                                "------------------------------\n" .
+                                "株式会社三喜\n" .
+                                "住所: 〒160-0023 	〒160-0023 東京都新宿区西新宿7-15-1 アパライトビル102\n" .
+                                "電話: 	050-3091-09900\n" .
+                                "Email: info@example.com\n" .
+                                "------------------------------";
+        $auto_reply_headers = "From: no-reply@example.com";
+
+        // 自動返信メール送信
+        mail($email, $auto_reply_subject, $auto_reply_message, $auto_reply_headers);
+    } else {
+        echo "メールの送信に失敗しました。";
+    }
+?>
