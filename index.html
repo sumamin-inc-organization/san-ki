@@ -12,7 +12,7 @@
     <meta property="og:title" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="assets/images/ogp.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="株式会社三喜" />
     <meta property="og:description" content="私たちの会社は、お客様、パートナー企業、そして社会全体に対して、常に最良の価値とサービスを提供することを使命としています。お客様の満足を最優先に考え、常にお客様の期待を超えるサービスを提供することを心掛けています。お客様の声に耳を傾け、柔軟かつ迅速に対応することで、信頼と満足を築いていきます。" />
@@ -37,20 +37,6 @@
 </head>
 
 <body>
-    <!-- <div id="loading">
-        <div class="loading__inner">
-            <div class="loading__img">
-                <div data-anime="" class="loadingChara">
-                    <img data-anime="shaking" src="./assets/images/img-moving.svg" alt="" class="shaking">
-                </div>
-                <div class="loading__text">
-                    <p>ちょっとまってね<span class="loading__text--01">.</span><span class="loading__text--02">.</span><span class="loading__text--03">.</span></p>
-                </div>
-            </div>
-            <div class="loading__surround1"><img src="./assets/images/top/about/img-about_surround1.svg" alt=""></div>
-            <div class="loading__surround2"><img src="./assets/images/top/about/img-about_surround2.svg" alt=""></div>
-        </div>
-    </div> -->
     <header>
         <div class="header">
             <div class="header_inner" data-anime="initial-fadeIn">
@@ -339,18 +325,18 @@
                     </div>
                 </div>
                 <div class="contact_form" data-anime="fadeIn-up">
-                    <form>
+                    <form action="contact.php" method="POST" id="contactForm">
                         <div class="form_group">
                             <label for="name">お名前 <span class="required">必須</span></label>
-                            <input type="text" id="name" name="name" placeholder="山田太郎" required>
+                            <input type="text" id="name" name="name" class="required-field" placeholder="山田太郎">
                         </div>
                         <div class="form_group">
                             <label for="tel">電話番号 <span class="required">必須</span></label>
-                            <input type="tel" id="tel" name="tel" placeholder="05030910990" required>
+                            <input type="tel" id="tel" name="tel" class="required-field" placeholder="05030910990">
                         </div>
                         <div class="form_group">
                             <label for="email">メールアドレス <span class="required">必須</span></label>
-                            <input type="email" id="email" name="email" placeholder="sample@example.com" required>
+                            <input type="email" id="email" name="email" class="required-field" placeholder="sample@example.com">
                         </div>
                         <div class="form_group">
                             <label for="message">お問い合わせ内容</label>
@@ -381,7 +367,7 @@
                             <!-- プライバシーポリシーの詳細を追加 -->
                         </div>
                         <div class="form_group checkbox_group">
-                            <input type="checkbox" id="agree" name="agree" required>
+                            <input type="checkbox" id="agree" name="agree" class="required-field">
                             <label for="agree">個人情報保護方針に同意する</label>
                         </div>
                         <div class="submit_btn_wrap">
@@ -447,6 +433,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/js/anime.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/luxy.min.js"></script>
     <script>
         function initLuxy() {

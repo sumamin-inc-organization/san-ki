@@ -649,6 +649,16 @@ input[type="checkbox"]:checked:before {
     -webkit-transform: translateY(-50%) translateX(-50%);
     transition: all 0.3s;
 }
+.error-message {
+    color: #FF5959;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error {
+    border: 1px solid #FF5959;
+}
+
 /* footer */
 .footer {
     background-color: var(--green);
