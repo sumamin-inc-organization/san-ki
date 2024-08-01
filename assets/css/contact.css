@@ -1,0 +1,75 @@
+.header_inner {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, .1);
+}
+.logo_img02 {
+    display: block;
+}
+#thanks {
+    margin: 180px auto 100px auto;
+    max-width: 888px;
+    padding: 0 20px;
+}
+.thanks_title {
+    font-size: 64px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    letter-spacing: 0.07rem;
+    height: 1.5;
+    text-align: center;
+    color: #4FA149;
+}
+.thanks_subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 12px;
+}
+.thanks_text,.thanks_note {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    line-height: 2.2;
+    padding-top: 60px;
+}
+.thanks_back_btn {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    background-color: var(--bule);
+    border: 1px solid var(--bule);
+    border-radius: 999px;
+    transition: all 0.3s;
+    margin: auto;
+    margin-top: 60px;
+    padding: 27.5px 0;
+    width: 300px;
+    color: #fff;
+}
+.thanks_back_btn:hover {
+    background-color: #fff;
+    color: var(--blue);
+}
+
+@media screen and (max-width:768px) {
+    #thanks {
+        margin: 120px auto 80px auto;
+        max-width: 888px;
+        padding: 0 20px;
+    }
+    .thanks_title {
+        font-size: 54px;
+    }
+    .header.fixType {
+        background-color: unset;
+    }
+    .header_inner {
+        box-shadow: none;
+    }
+    .thanks_back_btn {
+        padding: 15px 0;
+    }
+}
