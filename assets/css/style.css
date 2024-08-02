@@ -236,7 +236,7 @@ opacity: 0;/*真ん中の線は透過*/
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 100dvh;
+    height: 100svh;
     width: 100%;
 }
 
@@ -244,12 +244,12 @@ opacity: 0;/*真ん中の線は透過*/
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-40%) translateX(-50%);
+    -webkit-transform: translateY(-40%) translateX(-50%);
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: clamp(70px, 9rem, 90px);
+    gap: clamp(50px, 6rem, 60px);
 }
 
 .kv_main {
@@ -854,7 +854,7 @@ input[type="checkbox"]:checked:before {
         top: 0;
         right: -320px;
         width: 320px;
-        height: 100dvh;
+        height: 100svh;
         z-index: 1000;
         transition: all 0.5s;
     }
@@ -862,12 +862,13 @@ input[type="checkbox"]:checked:before {
         right: 0px;
     }
     .header_nav_logo {
-        display: block;
+        display: none;
         width: 43px;
         margin-top: 20px;
         margin-left: 20px;
     }
     .header_nav_inner {
+        margin-top: 70px;
         padding: 20px 40px;
     }
     .header_nav_list {
@@ -923,7 +924,9 @@ input[type="checkbox"]:checked:before {
     }
 
     .kv_inner {
-        gap: min(60px, 6rem);
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        gap: min(50px, 6rem);
         z-index: 200;
     }
     .kv_main {
@@ -1084,7 +1087,8 @@ input[type="checkbox"]:checked:before {
         padding: 0;
     }
     .sns_link a {
-        justify-content: flex-start;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
     }
 }
 /* hover */
@@ -1114,11 +1118,11 @@ input[type="checkbox"]:checked:before {
 .header.fixType .header_list:hover a::after {
     background-color: #000;
 }
-.header_contact:hover a {
+.header_contact:hover a, .header.fixType .header_contact:hover a {
     background-color: #fff;
     border: 1px solid var(--bule);
 }
-.header_contact:hover a {
+.header_contact:hover a, .header.fixType .header_contact:hover a {
     color: var(--bule);
 }
 .header_fixed .header_list:not(.header_contact) a::after {
